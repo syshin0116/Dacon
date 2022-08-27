@@ -17,6 +17,17 @@ from scipy.linalg import toeplitz
 
 
 # matrix
+# ‘C’ means to read / write the elements using C-like index order, 
+# with the last axis index changing fastest, back to the first axis index changing slowest. 
+# 
+# ‘F’ means to read / write the elements using Fortran-like index order, 
+# with the first index changing fastest, and the last index changing slowest. 
+# 
+# Note that the ‘C’ and ‘F’ options take no account of the memory layout of the underlying array, 
+# and only refer to the order of indexing. 
+# 
+# ‘A’ means to read / write the elements in Fortran-like index order if a is Fortran contiguous in memory, 
+# C-like order otherwise.
 
 a = np.array(range(10))
 a.reshape((5,2), order = 'C') # default
