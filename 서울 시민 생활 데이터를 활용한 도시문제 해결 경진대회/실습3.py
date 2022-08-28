@@ -32,6 +32,7 @@ from scipy.linalg import toeplitz
 a = np.array(range(10))
 a.reshape((5,2), order = 'C') # default
 a.reshape((5,2), order = 'F') # like R
+a.reshape((2,5), order = "A")
 
 # discussion: memory add
 # C: [0,0] -> [0,1] -> [1,0] -> [1,1] ... -> [4,0] -> [4,1]
