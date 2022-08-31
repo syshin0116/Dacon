@@ -1,4 +1,5 @@
 #-*- coding: utf-8 -*-
+from turtle import shape
 import numpy as np
 import matplotlib.pyplot as plt
 n = 3
@@ -9,6 +10,8 @@ amat[0,1]
 amat[0,:]
 amat[:,1]
 
+
+## amat: R^m(imput) -> R^n(output)
 import numpy as np
 n = 3
 m = 2
@@ -34,6 +37,18 @@ bvec = np.random.uniform(size = (m,1))
 print( amat_1@bvec + amat_2@bvec,'\n' )
 print (amat_3@bvec)
 
+np.random.seed(1)
+k = 5
+A = np.random.uniform(size = (n,k))
+A.shape
+B = np.random.uniform(size = (k,m))
+B.shape
+A
+B
+A@B
+(A@B)@bvec
+
+
 # columnwise operation
 n = 10
 p = 5
@@ -49,15 +64,15 @@ np.concatenate((y,z), axis = 1)
 
 # 샘플 데이터를 불러보자
 import pandas as pd
-path = "C:/Users/jjjeo/Desktop/1인가구_시각화_교육용2/"
+path = "/Users/syshin/Desktop/Syshin/Dacon/서울 시민 생활 데이터를 활용한 도시문제 해결 경진대회/"
 data = pd.read_csv(path+'sample.csv', encoding='cp949')
 data.head()
 n = data.shape
 
 # 코드에 대한 설명 파일을 불러보자
-code_data = pd.read_csv(path + 'code_pre.csv', 
-                        encoding = 'cp949')
+code_data = pd.read_csv(path + 'code_pre.csv', encoding = 'cp949')
 # 코드에 대한 설명을 확인하자
+code_data.head()
 code_data['속성명']
 
 # 분석 대상을 정의하자
@@ -74,11 +89,14 @@ x.mean(axis=0)
 x.std(axis=0)
 
 bvec = np.random.uniform(size = p)
+## np.linalg.norm(): 모든 수를 제곱, 더한 후 루트씌운다. (피타고라스의 정리랑 비슷)
 bvec=bvec/np.linalg.norm(bvec)
 (x[0,:]*bvec).sum()
 y = x@bvec
 plt.hist(y, bins = 200, range = (-10,10))
 
+
+## 차이를 잘 보여주는 bvec값을 구하는 과정
 from sklearn.decomposition import PCA
 pca = PCA(n_components=2)
 pca.fit(x)
