@@ -71,7 +71,8 @@ x[[i]]
 x[[i]].shape
 
 # 하나의 dimension 의 크기가 1인 경우 해당 dimension을 제거하기 위한 방법으로
-# np.squeeze  를 사용함
+# np.squeeze 를 사용함
+## np.squeeze() 함수 : 크기가 1인 axis 제거
 xs = np.squeeze(x[[i]], axis = 0)
 xs.shape
 plt.imshow(xs, cmap='gray')
