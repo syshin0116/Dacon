@@ -23,7 +23,7 @@ adm_cd = []
 for i in range(n):
     adm_cd.append(str(data['행정동코드'][i]))
 data['adm_cd'] = adm_cd
-ㄷㅅㄷㄱ
+
 """행정동 위치 파일과 결합"""
 geo = gpd.read_file('data.shp')
 df_geo = geo.iloc[:,[2,9]]

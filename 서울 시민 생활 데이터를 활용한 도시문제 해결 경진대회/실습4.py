@@ -1,4 +1,5 @@
 # Pandas 실습
+
 import pandas as pd
 import numpy as np
 
@@ -7,7 +8,7 @@ a = pd.DataFrame([[1,2],[2,3]],columns = ['col1', 'col2'])
 print(a)
 
 # 생성하기 csv
-path = "C:/Users/jjjeo/Desktop/1인가구_시각화_교육용2/1인가구.csv"
+path = "/Users/syshin/Desktop/Syshin/Dacon/서울 시민 생활 데이터를 활용한 도시문제 해결 경진대회/1인가구.csv"
 data = pd.read_csv(path, encoding='cp949')
 
 # 생성하기 csv
