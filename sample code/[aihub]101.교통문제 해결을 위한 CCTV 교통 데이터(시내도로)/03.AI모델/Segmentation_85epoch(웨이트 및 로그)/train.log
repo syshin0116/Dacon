@@ -1,0 +1,16 @@
+2021-02-19 15:37:07,158 - root - INFO - start
+2021-02-19 15:37:07,158 - root - INFO - 2021-02-19 15:37:07
+2021-02-19 15:37:19,474 - root - INFO - length of train_id : 21588
+2021-02-19 15:37:19,475 - root - INFO - length of valid_id : 4626
+2021-02-19 15:37:19,475 - root - INFO - length of test_id : 4627
+2021-02-19 15:37:19,511 - tensorflow - WARNING - From /usr/local/lib/python3.6/dist-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2021-02-19 15:37:34,012 - tensorflow - WARNING - `period` argument is deprecated. Please use `save_freq` to specify the frequency in number of samples seen.
+2021-02-19 15:37:34,045 - tensorflow - WARNING - From Segment_train.py:136: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2021-02-19 15:37:34,242 - root - INFO - model compile success
+2021-02-19 15:37:34,242 - root - INFO - start training
+2021-02-21 15:37:40,864 - root - INFO - model training completed
+2021-02-21 15:37:40,865 - root - INFO - end
