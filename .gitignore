@@ -1,7 +1,11 @@
 # do not track .tar files
 *.tar
 
+<<<<<<< HEAD
 **/Detect_25epoch(웨이트 및 로그)/
+=======
+**/Detect_25epoch(웨이트 및 로그)/
+>>>>>>> f7e0a1e2d3cab0666572b15a12257b915dd7d41a
 
 **/Detect_50epoch(웨이트 및 로그)/
 
@@ -9,6 +13,10 @@
 
 *.h5
 
+<<<<<<< HEAD
 *.npy
 
 *.pkl
+=======
+*.npy
+>>>>>>> f7e0a1e2d3cab0666572b15a12257b915dd7d41a
