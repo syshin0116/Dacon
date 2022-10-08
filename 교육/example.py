@@ -17,7 +17,7 @@ mpl.rcParams["axes.unicode_minus"] = False
 
 """1인가구 지수 데이터"""
 # 데이터 형식의 통일
-path = "/Users/syshin/Desktop/Syshin/Dacon/서울 시민 생활 데이터를 활용한 도시문제 해결 경진대회/1인가구.csv"
+path = "/Users/syshin/Desktop/Syshin/Dacon/교육/1인가구.csv"
 data = pd.read_csv(path, encoding='cp949')
 type(data)
 data.head(20)
