@@ -19,8 +19,6 @@ data/
 
 *.csv
 
-<<<<<<< HEAD
 seoul_pop_visualization.ipynb
-=======
-서울시 생활인구 시각화.ipynb
->>>>>>> 656e4dbe3c5a390e2359b58c3ea004777f00440c
+
+seoul_pop_visualization-checkpoint.ipynb
